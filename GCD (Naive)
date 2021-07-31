@@ -5,7 +5,7 @@ using namespace std;
 
 typedef long long ll;
 
-ll TrailingZero(ll a, ll b)
+ll GCD(ll a, ll b)
 {
    int res= min(a,b);
    while(res>0){
@@ -25,5 +25,5 @@ int main()
     ll a, b;
     cin>>a>>b;
     
-    cout<<TrailingZero(a,b);
+    cout<<GCD(a,b);
 }
