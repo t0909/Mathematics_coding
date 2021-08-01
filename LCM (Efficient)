@@ -1,0 +1,32 @@
+// LCM O(log(min(a,b))
+
+//a*b = GCD(a,b) * LCM(a,b)
+
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+
+ll GCD(ll a, ll b)
+{
+   
+   if(b==0)
+   return a ;
+   else
+   return GCD(b,a%b);
+   
+    
+}
+
+ll LCM(ll a, ll b)
+{
+    return (a*b)/GCD(a,b);
+}
+
+int main()
+{
+    ll a, b;
+    cin>>a>>b;
+    
+    cout<<LCM(a,b);
+}
